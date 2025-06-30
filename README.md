@@ -2,7 +2,7 @@
 
 > Scoped as: `ffmpeg-generator`  
 > Author: [Sirojbek](https://github.com/sirojbek)  
-> Version: `1.0.0`  
+> Version: `1.0.5`  
 > License: MIT
 
 ## ⚡ What is `ffmpeg-generator`?
@@ -33,6 +33,9 @@ npm install -g ffmpeg-generator
 ```
 
 ### 🚀 Usage
+
+![usage](https://files.catbox.moe/t1m336.gif)
+
 ```
 ffgen <input-file> <output-dir> [optional-subfolder]
 ```
