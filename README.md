@@ -58,4 +58,5 @@ MIT © 2025
 Feel free to remix, extend, or publish your own variant.
 
 ### Contact
-Linked In: [sirojbek](https://www.linkedin.com/in/sirojbek/)
+Linked In: [sirojbekmaqsudov](https://www.linkedin.com/in/sirojbek/)  
+GitHub: [SirojbekMaqsudov](https://github.com/SirojbekMaqsudov/ffmpeg-generator)
