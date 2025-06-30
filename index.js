@@ -120,7 +120,7 @@ const qualities = [
 
     const streamMap = validQualities.map((_, i) => `v:${i},a:${i}`).join(' ');
 
-    const cmd = `ffmpeg -i "${inputPath}" -filter_complex "${filterComplex}" ${outputCmds.join(' ')} -var_stream_map "${streamMap}" -master_pl_name "master.m3u8" -f hls -hls_time 10 -hls_playlist_type vod -hls_segment_filename "${outputPath}/%v/chunk_%03d.ts" "${outputPath}/%v/playlist.m3u8"`;
+    const cmd = `ffmpeg -i "${inputPath}" -filter_complex "${filterComplex}" ${outputCmds.join(' ')} -var_stream_map "${streamMap}" -master_pl_name "master.m3u8" -f hls -hls_time 6 -hls_playlist_type vod -hls_segment_filename "${outputPath}/%v/chunk_%03d.ts" "${outputPath}/%v/playlist.m3u8"`;
 
     console.log('\nFFMPEG Command: \n');
     console.log(cmd);
