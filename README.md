@@ -23,14 +23,14 @@ Generate multi-resolution FFmpeg HLS commands from any .mp4 file via a smart CLI
 - 🔍 Auto-detects video resolution & audio index
 - 📂 Smart directory structure with confirmation prompts
 - 🧠 Built-in presets for:
-    - 2160p, 1440p, 1080p, 720p, 480p, 360p
+  - 2160p, 1440p, 1080p, 720p, 480p, 360p
 - 🧪 Built-in `ffprobe` checks before processing
 - 💬 Interactive CLI with `inquirer`
 - ☁️ Perfect for streaming servers, encoding queues, media tools
-- 🖼️ Optional logo watermark overlay on all resolutions (--logo)
-- 🚀 Customizable FFmpeg encoding preset speed (--speed)
-  Supports: placebo, slow, medium, fast, faster, veryfast (default), superfast, ultrafast
-
+- 🖼️ Optional logo watermark overlay on all resolutions (`--logo`)
+- 🚀 Customizable FFmpeg encoding preset speed (`--speed`)
+  Supports: `placebo`, `slow`, `medium`, `fast`, `faster`, `veryfast` (default), `superfast`, `ultrafast`
+- ⏱️ Adjustable segment duration with `--hls-time` option (default: `6` seconds)
 ---
 
 ## 🧑‍💻 Installation

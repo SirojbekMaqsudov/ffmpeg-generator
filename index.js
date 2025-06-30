@@ -20,16 +20,17 @@ const qualities = [
 program
   .name('ffgen')
   .description('CLI to generate and run FFmpeg commands 💻🎬')
-  .version('1.0.10', '-v, --version', 'Display version information')
+  .version('1.2.0', '-v, --version', 'Display version information')
 
   .argument('<input>', 'input video file (.mp4)')
   .argument('<output>', 'output folder')
   .argument('[subfolder]', 'optional subfolder inside output')
   .option('-l, --logo <path>', 'path to logo file')
   .option('-s, --speed <speed>',  'FFmpeg preset speed: (placebo, slow, medium, fast, faster, veryfast, superfast, ultrafast)', 'veryfast')
+  .option('-t, --time <time>',  'FFmpeg segment time in seconds', '6')
   .action(async (...args) => {
     const [input, output, extra, options] = args;
-    const {logo, speed} = options;
+    const {logo, speed, time} = options;
     console.log(options)
 
     console.log('1. Arguments')
@@ -143,7 +144,7 @@ program
 
       const streamMap = validQualities.map((_, i) => `v:${i},a:${i}`).join(' ');
 
-      const cmd = `ffmpeg -i "${inputPath}" ${logo ? `-i "${logo}"` : ''} -filter_complex "${filterComplex}" ${outputCmds.join(' ')} -var_stream_map "${streamMap}" -master_pl_name "master.m3u8" -f hls -hls_time 6 -hls_playlist_type vod -hls_segment_filename "${outputPath}/%v/chunk_%03d.ts" "${outputPath}/%v/playlist.m3u8"`;
+      const cmd = `ffmpeg -i "${inputPath}" ${logo ? `-i "${logo}"` : ''} -filter_complex "${filterComplex}" ${outputCmds.join(' ')} -var_stream_map "${streamMap}" -master_pl_name "master.m3u8" -f hls -hls_time ${time} -hls_playlist_type vod -hls_segment_filename "${outputPath}/%v/chunk_%03d.ts" "${outputPath}/%v/playlist.m3u8"`;
 
       console.log('\nFFMPEG Command: \n');
       console.log(cmd);
