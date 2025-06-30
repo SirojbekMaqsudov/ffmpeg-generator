@@ -28,6 +28,7 @@ const qualities = [
   const args = process.argv.slice(2);
   const inputFile = args[0];
   let outputDir = args[1];
+  const extraDir = args[2];
   console.log('✅')
 
   console.log('2. Arguments Validation')
