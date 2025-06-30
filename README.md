@@ -1,9 +1,10 @@
-# 🎬 ffmpeg-generator — FFmpeg Command Generator CLI
-
-> Scoped as: `ffmpeg-generator`  
-> Author: [Sirojbek](https://github.com/sirojbek)  
-> Version: `1.0.5`  
-> License: MIT
+<h1 align="center">🎬 ffmpeg-generator</h1>
+<p align="center">CLI to auto-generate high-quality FFmpeg HLS commands with zero brain power 🧠⚡</p>
+<p align="center">
+  <img src="https://img.shields.io/npm/v/ffmpeg-generator?color=blue" />
+  <img src="https://img.shields.io/npm/dw/ffmpeg-generator?color=green" />
+  <img src="https://img.shields.io/badge/ffmpeg-powered-ff0000?logo=ffmpeg&logoColor=white" />
+</p>
 
 ## ⚡ What is `ffmpeg-generator`?
 
@@ -40,6 +41,10 @@ npm install -g ffmpeg-generator
 ffgen <input-file> <output-dir> [optional-subfolder]
 ```
 
+```bash
+ffgen input.mp4 output-folder-path
+```
+
 ### ❓ FAQ
 
 Q: Do I need FFmpeg installed?
@@ -62,4 +67,8 @@ Feel free to remix, extend, or publish your own variant.
 
 ### Contact
 Linked In: [sirojbekmaqsudov](https://www.linkedin.com/in/sirojbek/)  
-GitHub: [SirojbekMaqsudov](https://github.com/SirojbekMaqsudov/ffmpeg-generator)
+
+---
+Made with ☕, bugs, and ffmpeg rage by [Sirojbek](https://github.com/sirojbek), Smash that ⭐ on [GitHub](https://github.com/SirojbekMaqsudov/ffmpeg-generator)
+
+> Devs who know, know.
