@@ -5,7 +5,6 @@ import fs from 'fs';
 import path from 'path';
 import {execSync} from 'child_process';
 import inquirer from 'inquirer';
-import fileTreeSelection from 'inquirer-file-tree-selection-prompt';
 
 const program = new Command();
 
