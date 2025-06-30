@@ -28,7 +28,7 @@ Generate multi-resolution FFmpeg HLS commands from any .mp4 file via a smart CLI
 - 💬 Interactive CLI with `inquirer`
 - ☁️ Perfect for streaming servers, encoding queues, media tools
 - 🖼️ Optional logo watermark overlay on all resolutions (--logo)
-- 🚀 Customizable FFmpeg encoding preset speed (--preset)
+- 🚀 Customizable FFmpeg encoding preset speed (--speed)
   Supports: placebo, slow, medium, fast, faster, veryfast (default), superfast, ultrafast
 
 ---
