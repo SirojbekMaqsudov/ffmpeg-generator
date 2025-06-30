@@ -1,9 +1,14 @@
+Generate multi-resolution FFmpeg HLS commands from any .mp4 file via a smart CLI. Auto-detects streams, builds playlists, and speeds up your video pipeline.
+
 <h1 align="center">🎬 ffmpeg-generator</h1>
-<p align="center">CLI to auto-generate high-quality FFmpeg HLS commands with zero brain power 🧠⚡</p>
+<p align="center">CLI tool to generate high-quality FFmpeg HLS commands — fast, smart, and stream-ready ⚡</p>
+
 <p align="center">
-  <img src="https://img.shields.io/npm/v/ffmpeg-generator?color=blue" />
-  <img src="https://img.shields.io/npm/dw/ffmpeg-generator?color=green" />
-  <img src="https://img.shields.io/badge/ffmpeg-powered-ff0000?logo=ffmpeg&logoColor=white" />
+  <a href="https://www.npmjs.com/package/ffmpeg-generator">
+    <img src="https://img.shields.io/npm/v/ffmpeg-generator?color=blue" alt=""/>
+  </a>
+  <img src="https://img.shields.io/npm/dw/ffmpeg-generator?color=green" alt=""/>
+  <img src="https://img.shields.io/badge/ffmpeg-powered-ff0000?logo=ffmpeg&logoColor=white" alt=""/>
 </p>
 
 ## ⚡ What is `ffmpeg-generator`?
