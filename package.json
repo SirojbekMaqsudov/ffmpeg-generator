@@ -1,0 +1,45 @@
+{
+  "name": "ffmpeg-generator",
+  "type": "module",
+  "version": "1.0.3",
+  "files": [
+    "index.js"
+  ],
+  "main": "index.js",
+  "keywords": [
+    "ffmpeg",
+    "ffmpeg-cli",
+    "video",
+    "video-processing",
+    "ffmpeg-generator",
+    "hls",
+    "hls-streaming",
+    "video-transcoder",
+    "video-encoding",
+    "ffmpeg-wrapper",
+    "ffmpeg-hls",
+    "media",
+    "streaming",
+    "cli",
+    "command-line",
+    "node-cli",
+    "transcoding",
+    "ffmpeg-automation",
+    "ffmpeg-node",
+    "video-quality"
+  ],
+  "author": "",
+  "license": "MIT",
+  "description": "",
+  "dependencies": {
+    "commander": "^14.0.0",
+    "inquirer": "^12.6.3",
+    "inquirer-file-tree-selection-prompt": "^2.0.5"
+  },
+  "bin": {
+    "ffgen": "./index.js"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
