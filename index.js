@@ -28,7 +28,7 @@ const qualities = [
     .option('-l, --logo <path>', 'path to logo file')
     .option('-s, --speed <speed>',  'FFmpeg preset speed: (placebo, slow, medium, fast, faster, veryfast, superfast, ultrafast)', 'veryfast')
     .option('-t, --time <time>',  'FFmpeg segment time in seconds', '6')
-    .option('-exo',  'Customized for Mobile Safe')
+    .option('-e, --exo',  'Customized for Mobile Safe', false)
     .action(async (...args) => {
       const [input, output, extra, options] = args;
       const {logo, speed, time, exo} = options;
