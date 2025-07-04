@@ -20,7 +20,7 @@ const qualities = [
   program
     .name('ffgen')
     .description('CLI to generate and run FFmpeg commands 💻🎬')
-    .version('1.2.0', '-v, --version', 'Display version information')
+    .version('1.2.1', '-v, --version', 'Display version information')
 
     .argument('<input>', 'input video file (.mp4)')
     .argument('<output>', 'output folder')
