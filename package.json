@@ -3,9 +3,9 @@
   "type": "module",
   "version": "1.2.1",
   "files": [
-    "index.js"
+    "bin/index.js"
   ],
-  "main": "index.js",
+  "main": "bin/index.js",
   "keywords": [
     "ffmpeg",
     "ffmpeg-cli",
@@ -36,7 +36,7 @@
     "inquirer": "^12.6.3"
   },
   "bin": {
-    "ffgen": "./index.js"
+    "ffgen": "bin/index.js"
   },
   "publishConfig": {
     "access": "public"
