@@ -20,7 +20,7 @@ const qualities = [
   program
     .name('ffgen')
     .description('CLI to generate and run FFmpeg commands 💻🎬')
-    .version('1.2.2', '-v, --version', 'Display version information')
+    .version('1.2.3', '-v, --version', 'Display version information')
 
     .argument('<input>', 'input video file (.mp4)')
     .argument('<output>', 'output folder')
@@ -125,7 +125,7 @@ const qualities = [
 
         const logoFilter = logo
           ? validQualities
-          .map((q, i) => `[1:v]scale=180:-1[logo${i + 1}]`)
+          .map((q, i) => `[1:v]scale=${Math.floor(q.width / 8)}:-1[logo${i + 1}]`)
           .join(';') + ';'
           : '';
 
